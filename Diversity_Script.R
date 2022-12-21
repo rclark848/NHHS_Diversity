@@ -46,3 +46,5 @@ mean_Ho_J #0.238
 write.csv(Ho, "Ho.csv")
 #can you combine the Ho, Hs, and Fis dataframes into one to write out?
 #hint: google how to merge multiple dataframes
+
+#test
