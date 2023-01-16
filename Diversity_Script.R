@@ -25,14 +25,19 @@ sum_stats_mac2 <- basic.stats(SNPs_mac2) #hierfstat function --> gives Ho, Hs, F
 ######## calculate Ho (observed heterozygosity) ########
 
 ## calculate Ho per locus ##
-Ho <- sum_stats_mac2$Ho
+J_Ho <- sum_stats_mac2$Ho
 J_Ho <- Ho[,1]
 J_Ho_df <- data.frame(J_Ho)
 J_Ho_df <- data.frame(sum_stats_mac2$Ho[,1]) #pull out Ho for J pop --> combined into one line of code
 
 ## calculate mean Ho in each pop ##
-mean_Ho_J <- mean(J_Ho)
+mean_Ho_I <- mean(I_Ho)
 mean_Ho_J #0.238
+
+##Japan 0.24283
+##Indonesia 0.24604
+##Philippines 0.24463
+
 
 ################################################################################################################################################
 
