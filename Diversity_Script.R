@@ -37,10 +37,13 @@ mean_Ho_J #0.238
 ##Indonesia 0.24604
 ##Philippines 0.24463
 
+## Indonesia has the highest heterozygosity in the population followed by the Philippines and then Japan. 
+## Their diversities are similar, but it still supports my hypothesis that the core populations are more closely correlated. 
+## Hence, there is also less diversity present in the Japan location.
 
 ################################################################################################################################################
 
-#calculate mean Hs and Fis for all three populations
+#calculate mean Hs (expected heterozygosity?) and Fis (inbreeding coefficient) for all three populations
 #hint: repeat the previous lines of code as needed for each population and metric, changing as necessary
 
 ##Hs
