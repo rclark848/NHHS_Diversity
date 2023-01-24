@@ -33,7 +33,7 @@ I_Hs <- Hs[,2]
 mean_Ho_I <- mean(I_Ho)
 mean_Ho_J #0.238
 
-##Japan 0.24283
+##Japan 0.2378
 ##Indonesia 0.24604
 ##Philippines 0.24463
 
@@ -51,6 +51,9 @@ mean_Ho_J #0.238
 #Japan 0.21164
 #Indonesia 0.24033
 #Philippines 0.24356
+
+## Similar ordeal with observed heterozygosity. Here, however, Japan had a much lower expected diversity.
+## As such, there is less of a gap than i may have hypothesized. Nonetheless, there is still a gap for the populations. 
 
 ##Fis - might need to troubleshoot this.. i dont think my computations are accurate 
 
