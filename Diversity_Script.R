@@ -58,9 +58,9 @@ mean_Ho_J #0.238
 ##Fis - might need to troubleshoot this.. i dont think my computations are accurate 
 
 
-##Japan NaN
-##Indonesia NaN
-##Philippines NaN
+##Japan -0.1126
+##Indonesia -0.0153
+##Philippines 0.0154
 
 ################################################################################################################################################
 
