@@ -55,12 +55,15 @@ mean_Ho_J #0.238
 ## Similar ordeal with observed heterozygosity. Here, however, Japan had a much lower expected diversity.
 ## As such, there is less of a gap than i may have hypothesized. Nonetheless, there is still a gap for the populations. 
 
-##Fis - might need to troubleshoot this.. i dont think my computations are accurate 
-
+##Fis 
 
 ##Japan -0.1126
 ##Indonesia -0.0153
 ##Philippines 0.0154
+
+## Japan has the lowest inbreeding coefficient, meaning that there is a low probability that gene variants have been
+# inherited from an ancestor common to both the mother and father. This indicates that there is a high level of heterozygosity. 
+
 
 ################################################################################################################################################
 
