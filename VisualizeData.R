@@ -30,37 +30,7 @@ J_He <- cbind(J_He_mean, J_He_ste)
 
 J_div_sum <- cbind(J_Fis, J_Ho, J_He)
 
-#pull Philippines means & standard errors
-nona_PFis <- Fis[!is.na(Fis$Philippines), 4]
-P_Fis_mean <- mean(nona_PFis)
-P_Fis_ste <- std.error(nona_PFis)
-P_Fis <- cbind(P_Fis_mean, P_Fis_ste)
-
-P_Ho_mean <- mean(Ho$Philippines)
-P_Ho_ste <- std.error(Ho$Philippines)
-P_Ho <- cbind(P_Ho_mean, P_Ho_ste)
-
-P_He_mean <- mean(He$Philippines)
-P_He_ste <- std.error(He$Philippines)
-P_He <- cbind(P_He_mean, P_He_ste)
-
-P_div_sum <- cbind(P_Fis, P_Ho, P_He)
-
-#pull Indonesia means & standard errors
-nona_IFis <- Fis[!is.na(Fis$Indonesia), 3]
-I_Fis_mean <- mean(nona_IFis)
-I_Fis_ste <- std.error(nona_IFis)
-I_Fis <- cbind(I_Fis_mean, I_Fis_ste)
-
-I_Ho_mean <- mean(Ho$Indonesia)
-I_Ho_ste <- std.error(Ho$Indonesia)
-I_Ho <- cbind(I_Ho_mean, I_Ho_ste)
-
-I_He_mean <- mean(He$Indonesia)
-I_He_ste <- std.error(He$Indonesia)
-I_He <- cbind(I_He_mean, I_He_ste)
-
-I_div_sum <- cbind(I_Fis, I_Ho, I_He)
+#copy the code above and repeat to make P_div_sum and I_div_sum for the Philippines and Indonesia
 
 #write out summary table
 tot_div_sum <- data.frame(rbind(J_div_sum, P_div_sum, I_div_sum))
