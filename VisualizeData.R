@@ -20,13 +20,45 @@ J_Fis_mean <- mean(nona_JFis)
 J_Fis_ste <- std.error(nona_JFis)
 J_Fis <- cbind(J_Fis_mean, J_Fis_ste)
 
+##Means: Fis
+# Japan -0.07807
+# Indonesia -0.01528
+# Philippines 0.01537
+
+##Standard Errors: Fis
+# Japan 0.00639
+# Indonesia 0.006734
+# Philippines 0.005872
+
 J_Ho_mean <- mean(Ho$Japan)
 J_Ho_ste <- std.error(Ho$Japan)
 J_Ho <- cbind(J_Ho_mean, J_Ho_ste)
 
+## Means: Ho
+# Japan 0.2378
+# Indonesia 0.2460
+# Philippines 0.24463
+
+## Standard Error: Ho
+# Japan 0.003945
+# Indonesia 0.003746
+# Philippines 0.005871
+
+
 J_He_mean <- mean(He$Japan)
 J_He_ste <- std.error(He$Japan)
 J_He <- cbind(J_He_mean, J_He_ste)
+
+## Means: He
+# Japan 0.2116
+# Indonesia 0.2460
+# Philippines 0.2436
+
+
+## Standard Error: He
+# Japan 0.002839
+# Indonesia 0.002930
+# Philippines 0.002542
 
 J_div_sum <- cbind(J_Fis, J_Ho, J_He)
 
