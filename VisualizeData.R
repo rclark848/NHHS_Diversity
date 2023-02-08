@@ -42,7 +42,7 @@ J_Ho <- cbind(J_Ho_mean, J_Ho_ste)
 ## Standard Error: Ho
 # Japan 0.003945
 # Indonesia 0.003746
-# Philippines 0.005871
+# Philippines 0.003344
 
 
 J_He_mean <- mean(He$Japan)
