@@ -80,8 +80,12 @@ tot_div_sum <- read.csv("diversity_mean_std.csv")
 tot_div_sum$Pop2 <- factor(tot_div_sum$Pop, levels = c("Japan", "Philippines", "Indonesia"))
 
 #Fis scatterplot
-Fis_plot <- ggplot(data = tot_div_sum, aes(x = Pop2, y = Fis_mean)) + geom_point() + 
-  geom_errorbar(aes(ymin = Fis_mean - Fis_sterror, ymax = Fis_mean + Fis_sterror))
+Fis_plot <- ggplot(data = tot_div_sum, aes(x = Loci, y = Fis_mean, col=X), position=position_dodge()) + geom_point(position=pd, size=3, shape=21) + 
+  geom_errorbar(aes(ymin = Fis_mean - Fis_sterror, ymax = Fis_mean + Fis_sterror), width= .2, position=position_dodge(.9))
+Fis_plot
+
+Fis_plot <- ggplot(data = tot_div_sum, aes(x = Loci, y = Fis_mean, col=X), position=position_dodge()) + 
+  geom_errorbar(aes(ymin = Fis_mean - Fis_sterror, ymax = Fis_mean + Fis_sterror), width= .2, position=position_dodge(.9)) + geom_point()
 Fis_plot
 
 #tips on how to change scatterplot appearance: http://www.sthda.com/english/wiki/ggplot2-scatter-plots-quick-start-guide-r-software-and-data-visualization
